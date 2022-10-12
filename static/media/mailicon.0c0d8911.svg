@@ -1,0 +1,12 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+  <g id="Group_16324" data-name="Group 16324" transform="translate(-46.107 -42)">
+    <path id="Path_10151" data-name="Path 10151" d="M7,0A7,7,0,1,1,0,7,7,7,0,0,1,7,0Z" transform="translate(46.107 42)" fill="#2698f9"/>
+    <g id="Mail-09" transform="translate(-13.846 -36.807)">
+      <path id="Path_13992" data-name="Path 13992" d="M75.683,86.6l3.783-3.513a1.569,1.569,0,0,0-.919-.292H72.819a1.569,1.569,0,0,0-.919.292Z" transform="translate(-8.73 0)" fill="#fff"/>
+      <path id="Path_13993" data-name="Path 13993" d="M147.9,94.258l2.522,2.344a1.619,1.619,0,0,0,.3-.933V92.833a1.619,1.619,0,0,0-.3-.933Z" transform="translate(-79.315 -8.452)" fill="#fff"/>
+      <path id="Path_13994" data-name="Path 13994" d="M65.322,94.444,62.8,92.1a1.619,1.619,0,0,0-.3.933v2.836a1.619,1.619,0,0,0,.3.933Z" transform="translate(0 -8.637)" fill="#fff"/>
+      <path id="Path_13995" data-name="Path 13995" d="M76.93,130l-1.247,1.161L74.437,130,71.9,132.358a1.569,1.569,0,0,0,.919.292h5.721a1.569,1.569,0,0,0,.919-.292Z" transform="translate(-8.73 -43.837)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
