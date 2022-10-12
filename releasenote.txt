@@ -1,0 +1,11 @@
+Release Date: 04-Aug-2022
+Release Version: 7.9.0 
+
+Build Number: 1
+Following bug have been fixed.
+1) https://apptha.atlassian.net/browse/CONTUIMSER-30570
+
+Note: We are getting the user details using the API instead of ejabberd iq.
+https://apptha.atlassian.net/browse/CONTUIMSER-31042
+
+

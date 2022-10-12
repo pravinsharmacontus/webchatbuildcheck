@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29" height="29" viewBox="0 0 29 29">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_7804" data-name="Rectangle 7804" width="29" height="29" transform="translate(15104 -15740)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Title_view" data-name="Title view" transform="translate(-15104 15740)" clip-path="url(#clip-path)">
+    <g id="Group_30858" data-name="Group 30858" transform="translate(13911 -15765)">
+      <g id="Group_15911" data-name="Group 15911" transform="translate(1196 28)">
+        <path id="Path_13893" data-name="Path 13893" d="M330.225,184.279h-7.117a1.7,1.7,0,0,1-1.695-1.695V172.553a1.7,1.7,0,0,1,1.695-1.7h7.117a1.7,1.7,0,0,1,1.7,1.7v10.031A1.7,1.7,0,0,1,330.225,184.279Zm0-23.839h-7.117a1.7,1.7,0,0,0-1.695,1.695v5.174a1.7,1.7,0,0,0,1.695,1.7h7.117a1.7,1.7,0,0,0,1.7-1.7v-5.174A1.7,1.7,0,0,0,330.225,160.44Zm-19.61.265h7.117a1.7,1.7,0,0,1,1.7,1.7v19.919a1.7,1.7,0,0,1-1.7,1.695h-7.117a1.7,1.7,0,0,1-1.7-1.695V162.4A1.7,1.7,0,0,1,310.615,160.7Z" transform="translate(-308.92 -160.44)" fill="rgba(255,255,255,0.55)" fill-rule="evenodd"/>
+      </g>
+      <g id="Group_15916" data-name="Group 15916" transform="translate(0.5 -1.5)">
+        <line id="Line_308" data-name="Line 308" x2="26" y2="21" transform="translate(1193.5 31)" fill="none" stroke="#919398" stroke-linecap="round" stroke-width="1"/>
+        <line id="Line_309" data-name="Line 309" x2="26" y2="21" transform="translate(1194.5 30.5)" fill="none" stroke="#0a0e18" stroke-linecap="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

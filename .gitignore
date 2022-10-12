@@ -1,0 +1,12 @@
+/node_modules
+/build
+# /public/assets/env.json
+.vscode/
+.eslintrc.json
+npm-debug.log
+/src/assets/scss/*.css
+.config.swp
+.git.swp
+# testing
+/coverage
+package-lock.json

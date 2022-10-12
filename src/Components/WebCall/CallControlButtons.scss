@@ -1,0 +1,19 @@
+.button-group-center{
+    .not-allowed{
+        >*{
+            cursor: not-allowed;
+        }
+        cursor: not-allowed !important;
+    }
+    .disabled-btn{
+        color: #fff;
+        cursor: default !important;
+        background: #474E5A !important;
+        i,svg{
+            color: #fff;
+            cursor: default !important;
+        }
+        &:hover{
+            background: #474E5A !important;
+        }
+    }}

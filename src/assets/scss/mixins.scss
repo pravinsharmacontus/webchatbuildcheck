@@ -1,0 +1,396 @@
+/** for chat bubble**/
+.msg-row {
+@include flexbox();
+padding: 0 1.5625em;
+font-family: $regular;
+margin-bottom: 0.313em;
+position: relative;
+}
+
+.msg-inner {
+padding: 0.250em 0.250em 0.250em 0.40em;
+box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.05);
+@include transition(all ease 0.2s);
+min-width: 5.875em;
+box-sizing: border-box;
+max-width: 34.375em;
+position: relative;
+@include transition(all ease 0.2s);
+}
+
+.msg-inner-text {
+font-size: 0.7425rem;
+line-height: 1.4em;
+font-family: $regular;
+letter-spacing: 0.3px;
+}
+
+.msg-time-inner {
+position: absolute;
+right: 0.30em;
+bottom: 0.188em;
+@include flexbox(); 
+@include align-items(center);
+}
+
+.star-svg {
+width: 0.563em;
+height: 0.563em;
+margin-right: 0.313em;
+}
+
+.img-drop-arrow {
+position: absolute;
+right: 5px;
+z-index: 1;
+width: 0.750em;
+height: 0.750em;
+top: 8px;
+}
+
+.menu-dropdown {
+position: absolute;
+right: 0;
+top: 20px;
+background: #FFFFFF;
+cursor: pointer;
+box-shadow: 0px 3px 6px #0000001A;
+border-radius: 3px;
+z-index: 1;
+li {
+    padding: 0.463em 1em;
+    min-width: 6.500em;
+    @include flexbox();
+    @include align-items(center);
+    &:hover {
+        background-color: #F3F8FF;
+    }
+    span {
+        font-size: $font12;
+        color: #000;
+        font-family: $regular;
+        margin-left: 0.625em;
+    }
+}
+}
+
+.sender-name-style{
+  font-size: 0.75rem;
+  font-family: SFUIDisplaySemibold,sans-serif;
+  letter-spacing: 0.11px;
+  color: #313131;
+  display: inline-block;
+  white-space: pre;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+
+
+
+// commom style
+.container{
+  
+  .checkbox-common {
+    display: inline-block;
+    height: 18px;
+    label {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      width: 18px;
+      height: 18px;
+      overflow: hidden;
+      &:before {
+      content: '';
+      -webkit-appearance: none;
+      background-color: transparent;
+      border: 2px solid #BBC1C4;
+      box-shadow: none;
+      display: inline-block;
+      position: absolute;
+      vertical-align: middle;
+      cursor: pointer;
+      width: 18px;
+      height: 18px;
+      border-radius: 2px;
+      box-sizing: border-box;
+      top: 0px;
+      left: 0;
+    }
+  }
+  input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+
+    &:checked + label{
+    background: #30C076;
+    border-radius: 2px;
+    box-sizing: border-box;
+    width: 18px;
+    height: 18px;
+    &:after {
+      content: '';
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 6px;
+    width: 4px;
+    height: 9px;
+    border: solid #ffffff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    }
+    &::before {
+      border-color: #30C076;
+    }
+  }
+  }
+}
+
+.withcheckbox {
+  >label{
+  @include flexbox();
+  @include align-items(center);
+ 
+  cursor: pointer;
+  &:hover {
+    background-color: #edf4f9;
+    .recentchats .recent-message-block .recent-message-icon i.downarrow {
+      display: block;
+    }
+  }
+  .profile-image {
+    position: relative !important;
+    margin: 0 1em;
+    i {
+      position: absolute;
+      right: -0.188em;
+      bottom: -0.125em;
+      height: 1.188em;
+      width: 1.188em;
+    }
+    .image {
+      height: 2.688em;
+      width: 2.688em;
+      background: none;
+      @include border-radius(50%);
+      overflow: hidden;
+      img{
+        object-fit: cover;
+      }
+    }
+  }
+  .recentchats {
+    position: relative;
+    overflow: hidden;
+    @include flex(1);
+      padding: 0.625em 0;
+      border-bottom: 1px solid #E2E2E2;
+      margin-right: 1em;
+    .recent-username-block {
+      width: 85%;
+      @include flexbox();
+      @include align-items(center);
+      .recent-username {
+        @include flexbox();
+        @include align-items(center);
+        @include flex-grow(1);
+        overflow: hidden;
+        .username {
+          display: inherit;
+          overflow: inherit;
+          text-overflow: inherit;
+          white-space: inherit;
+          h3 {
+            font-size: 0.775rem;
+            font-family: $medium;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: pre;
+            color: $rechathead;
+            line-height: 120%;
+            letter-spacing: .3px;
+          }
+        }
+      }
+    }
+    .recent-message-block {
+      width: 85%;
+      @include flexbox();
+      @include align-items(center);
+      height: 1em;
+      & > span {
+        max-width: 90%;
+      }
+      span {
+        font-size: 0.69rem;
+        font-family: $regular;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: #4a5568;
+        line-height: 15px;
+        letter-spacing: .2px;
+        i.user-status,
+        i.user-status-sent,
+        i.user-status-receive {
+          height: 0.6em;
+          width: 0.6em;
+          min-width: 5px;
+          min-height: 5px;
+          @include border-radius(50%);
+          margin-right: 0.333em;
+          line-height: 14px;
+        }
+      }
+    }
+    .active {
+      span {
+        font-family: $medium;
+        color: $rechatmsgactive;
+      }
+    }
+
+    .checkbox{
+      @extend .checkbox-common;
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translate(10px, -50%);
+    }
+  }
+}
+}
+.chat-list-li.active {
+  background-color: #edf4f9;
+}
+
+i.msg-processing {
+  line-height: 0;
+  width: 1.2em;
+  position: relative;
+  top: 2.5px;
+  svg {
+    line-height: 0;
+  }
+}
+
+}//common style end
+
+.file-details{
+  position: relative;
+  top: -0.35em;
+  @include flexboxinline();
+  @include align-items(center);
+  color:$bgc-rev-attach-file-details;
+  font-family: $light;
+  font-size: 0.525rem;
+  letter-spacing: 0px;
+  text-transform: capitalize;
+  padding: 0 0.250em 0.250em 0.40em;
+  margin-left: 0.625em;
+  .dot-sm{
+    @include box(0.188rem);
+    border-radius:50%;
+    background:$bgc-rev-attach-file-details;
+    margin:0 0.313rem;
+  }
+}
+.image-caption{
+  .file-details {
+    margin-left: 0;
+  }
+}
+
+
+@mixin chat-list-li-blocked {
+  &.Blocked{
+    --bg-blocked: rgb(249 239 239);
+    h3{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+    .checkbox{
+      display: none !important;
+    }
+    label{
+    background-color: var(--bg-blocked)!important;
+  }
+    .blocked-info{
+      @include flexboxinline();
+      @include justify-content(center);
+      @include align-items(center);
+      color: #E24848;
+      user-select: none;
+      i{
+        width: .85em;
+        height: .85em;
+        margin: 0 0.375em;
+        svg{
+        fill: #E24848;
+        width: .85em;
+        height: .85em;
+        path{
+          fill: #E24848;
+        }
+        }
+      }
+      span{
+        color: red;
+        font-size: 0.775rem;
+        font-family: SFUIDisplayMedium, sans-serif;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: pre;
+        line-height: 120%;
+        letter-spacing: .3px;
+      }
+      
+    }
+    .username{
+      display: flex !important;
+      width: 100% !important;
+      justify-content: space-between;
+    }
+    .recent-message-block,.recent-username-block{
+    width: 100% !important;
+    }
+    &.bc-none{
+      background-color: transparent !important;
+      label{
+        background-color: transparent !important;
+      }
+    }
+  }
+  .Unblock{
+    font-size: 0.688em;
+    font-family: $medium;
+    color:#fff;
+    background: $primary;
+    border-radius: 0.125em;
+    padding:0.5em 1em ;
+    transition:all linear 200ms;
+    cursor: pointer;
+    margin-right: .7em;
+    &:hover{
+        background: $primary-dark;
+        transition:all linear 200ms;
+    }
+}
+}
+//common style end
+
+
+@media screen and (max-width:767px) {
+  .msg-inner {
+    min-width: 6.875em;
+  }
+}
